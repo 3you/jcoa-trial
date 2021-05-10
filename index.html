@@ -20,8 +20,8 @@
   }
 
   h1 {
-    font-size: normal;
-    text-align: center;
+    font-size: small;
+    text-align: right;
   }
 
   section {
@@ -45,6 +45,7 @@
     margin: auto;
     line-height: 40px;
     position: relative;
+    <!- color: #69008c;->
   }
 table {
 	border-collapse: collapse;
@@ -54,8 +55,16 @@ table {
 	font-size: large;
 }
 
- table.haneda tr:nth-child(odd){
+table .haneda1 {
+  margin-bottom: 3%;
+}
+
+ table.haneda1 tr:nth-child(odd){
   background-color:#dfe9f7;
+}
+
+table.haneda2 tr:nth-child(odd){
+ background-color:#dfe9f7;
 }
 
 table.airlines tr:nth-child(odd){
@@ -92,45 +101,58 @@ table.seat tr:nth-child(odd){
 </head>
 
 <body>
-    <h1>公式サイトまとめ</h1>
+    <h1>最終更新　2021/05/10</h1>
 
     <section  style="background: #c6daf7;">
       <h2>羽田空港</h2>
-      	<table class="haneda" border="1">
+      	<table class="haneda1" border="1">
       		<tr>
 	        		<td width="85%"><a href="https://tokyo-haneda.com/site_resource/floor/pdf/floor__pdf_floor_map_t1.pdf">フロアガイド</a></td>
 	        		<td width="15%"><a href="./qr/qr-floorguide.png" target="_blank"><img src="image-qr.png"></a></td>
 	        	</tr><tr>
-	        		<td><a href="https://jcoa-ms.github.io/map/">マップ</a></td>
+	        		<td><a href="https://jcoa-ms.github.io/map/">マップ各種</a></td>
 	          	<td><a href="./qr/qr-map.png" target="_blank"><img src="image-qr.png"></a></td>
 	          </tr><tr>
               <td><a href="https://tokyo-haneda.com/floor/terminal1/2nd_floor.html">出発ロビー</a></td>
               <td><a href="./qr/qr-deplobby.png" target="_blank"><img src="image-qr.png"></a></td>
             </tr><tr>
-	        		<td><a href="https://jcoa-ms.github.io/route-2tami/">第2ターミナルまでの行き方</a></td>
+	        		<td><a href="https://jcoa-ms.github.io/2tami/">第2ターミナルまでの行き方</a></td>
 	        		<td><a href="./qr/qr-2tami.png" target="_blank"><img src="image-qr.png"></a></td>
 	        	</tr><tr>
-	        		<td><a href="https://tokyo-haneda.com/site_resource/whats_new/pdf/000007750.pdf">店舗営業時間</a></td>
-	        		<td><a href="./qr/qr-shop.png" target="_blank"><img src="image-qr.png"></a></td>
+	        		<td><a href="https://jcoa-ms.github.io/3tami/">第3ターミナルまでの行き方</a></td>
+	        		<td><a href="./qr/qr-3tami.png" target="_blank"><img src="image-qr.png"></a></td>
+	        	</tr><tr>
+              <td><a>ラウンジ場所 ( </a><a href="./location/jal.png">JAL</a><a> / </a>
+                  <a href="./location/power.png">power</a><a> )</a></td>
+              <td></td>
+            </tr><tr>
+              <td><a>喫煙所 ( </a><a href="./location/smoke-2fc.png">カウンター側</a><a> / </a>
+                  <a href="./location/smoke-2fs.png">ゲート側</a><a> )</a></td>
+              <td></td>
+            </tr><tr>
+	        		<td><a href="https://tokyo-haneda.com/service/facilities/bank.html">ATM</a></td>
+	        		<td><a href="./qr/qr-atm.png" target="_blank"><img src="image-qr.png"></a></td>
+	        	</tr>
+        </table>
+        <p><br></p>
+        <table class="haneda2" border="1">
+          <tr>
+	        		<td width="85%"><a href="https://tokyo-haneda.com/site_resource/whats_new/pdf/000007750.pdf">店舗営業時間</a></td>
+	        		<td width="15%"><a href="./qr/qr-shop.png" target="_blank"><img src="image-qr.png"></a></td>
 	        	</tr><tr>
 	       		<td><a href="https://tokyo-haneda.com/shop_and_dine/search_r.html"> レストラン検索</a></td>
 	       		<td><a href="./qr/qr-restaurant.png" target="_blank"><img src="image-qr.png"></a></td>
 	       	</tr><tr>
-	        		<td><a href="https://tokyo-haneda.com/service/facilities/bank.html">ATM</a></td>
-	        		<td><a href="./qr/qr-atm.png" target="_blank"><img src="image-qr.png"></a></td>
-	        	</tr><tr>
-	        		<td><a href="https://tokyo-haneda.com/service/facilities/index.html">サービス一覧</a></td>
-	        		<td><a href="./qr/qr-service.png" target="_blank"><img src="image-qr.png"></a></td>
-	        	</tr><tr>
-	        		<td><a href="https://tokyo-haneda.com/service/facilities/lounge.html">power lounge</a></td>
-	        		<td><a href="./qr/qr-powerlounge.png" target="_blank"><img src="image-qr.png"></a></td>
-            </tr><tr>
-	        		<td><a href="https://jcoa-ms.github.io/powerlounge/">power lounge利用可能カード</a></td>
-	        		<td><a href="./qr/qr-powerloungecard.png" target="_blank"><img src="image-qr.png"></a></td>
-            </tr><tr>
-	        		<td><a href="https://covid-kensa.com/haneda.html">空港PCR検査</a></td>
-	        		<td><a href="./qr/qr-hndpcr.png" target="_blank"><img src="image-qr.png"></a></td>
-	        	</tr>
+            <td><a href="https://tokyo-haneda.com/service/facilities/index.html">サービス一覧</a></td>
+            <td><a href="./qr/qr-service.png" target="_blank"><img src="image-qr.png"></a></td>
+          </tr><tr>
+            <td><a href="https://tokyo-haneda.com/service/facilities/lounge.html">power lounge</a><a> / </a>
+                <a href="https://jcoa-ms.github.io/powerlounge/">利用可能カード</a></td>
+            <td><a href="./qr/qr-powerlounge.png" target="_blank"><img src="image-qr.png"></a></td>
+          </tr><tr>
+            <td><a href="https://covid-kensa.com/haneda.html">空港PCR検査</a></td>
+            <td><a href="./qr/qr-hndpcr.png" target="_blank"><img src="image-qr.png"></a></td>
+          </tr>
         </table>
     </section>
 
@@ -175,7 +197,8 @@ table.seat tr:nth-child(odd){
       <table class="ground" border="1">
       	<tr>
        		<td width="85%"><a href="https://tokyo-haneda.com/site_resource/information/pdf/000010912.pdf">
-          無料連絡バス時刻表</a></td>
+          無料連絡バス時刻表</a><a> ( </a>
+          <a href="https://tokyo-haneda.com/access/moving_between_terminals/index.html">公式HP</a><a> )</a></td>
           	<td width="15%"><a href="./qr/qr-freebus.png" target="_blank"><img src="image-qr.png"></a></td>
          </tr><tr>
         		<td><a href="https://tokyo-haneda.com/access/bus/index.html">
@@ -191,7 +214,8 @@ table.seat tr:nth-child(odd){
           	<td><a href="./qr/qr-keikyubus.png" target="_blank"><img src="image-qr.png"></a></td>
          </tr><tr>
         		<td><a href="https://www.keikyu.co.jp/ride/kakueki/pdf/timetable/KK17.pdf">
-          京急線時刻表</a></td>
+          京急線時刻表</a><a> ( </a>
+            <a href="https://www.keikyu.co.jp/ride/kakueki/KK17.html">公式HP</a><a> )</a></td>
           	<td><a href="./qr/qr-train.png" target="_blank"><img src="image-qr.png"></a></td>
          </tr><tr>
         		<td><a href="http://www.tokyo-monorail.co.jp/news/pdf/timetable2021/haneda.pdf">
@@ -287,11 +311,11 @@ table.seat tr:nth-child(odd){
           		<td><a href="./qr/qr-tokutenmiles.png" target="_blank"><img src="image-qr.png"></a></td>
           	</tr><tr>
         			<td><a href="https://www.jal.co.jp/jmb/index02.html">
-          マイレージを貯める</a></td>
+          マイレージをためる</a></td>
           		<td><a href="./qr/qr-tameru.png" target="_blank"><img src="image-qr.png"></a></td>
           	</tr><tr>
         			<td><a href="https://www.jal.co.jp/jp/ja/jmb/index03.html">
-          マイレージを使う</a></td>
+          マイレージをつかう</a></td>
           		<td><a href="./qr/qr-tsukau.png" target="_blank"><img src="image-qr.png"></a></td>
           	</tr><tr>
         			<td><a href="https://www.jal.co.jp/jmb/earn/travel/flight/jigo.html">
